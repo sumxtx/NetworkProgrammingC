@@ -4,20 +4,6 @@
 #define PREFIX_LEN 16
 
 
-void
-get_broadcast_address(char *ip_addr /*,char mask, char output_buffer*/);
-/* usage: 
- *      char ipadd_buffer[PREFIX_LEN];
- *      memset(ipadd_buffer, 0, PREFIX_LEN);
- *      char *ip_add = "192.168.146.115";
- *      char mask = 20;
- *      get_broadcast_address(ip_add, mask, ipadd_buffer);
- *      printf("Broadcast address = %s\n", ipadd_buffer);
- * */
-
-unsigned int
-get_ip_integral_equivalent(char *ip_address);
-/* usage: */
 
 int main()
 {
