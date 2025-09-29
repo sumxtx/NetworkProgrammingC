@@ -1,15 +1,11 @@
-#ifndef _WIN32_WINNT
-#define _WIN32_WINNT 0x600
-#endif
+#include "sock.h" 
+/*./include/sock.h*/
 
-#include <winsock2.h>
+#pragma comment (lib, "iphlpapi.lib")
 #include <iphlpapi.h>
-#include <ws2tcpip.h>
 #include <stdio.h>
 #include <stdlib.h>
 
-#pragma comment (lib, "ws2_32.lib")
-#pragma comment (lib, "iphlpapi.lib")
 
 
 int main() {
